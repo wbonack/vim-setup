@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Volumes/Moria/work/ESP/scripts/libexec'
+let g:netrw_dirhist_2='/Volumes/Moria/work/confhatch/src/etc/logrotate.d'
+let g:netrw_dirhist_3='/Users/damon/tmp'
+let g:netrw_dirhist_4='/Volumes/Moria/work/ESP/workflow_tests/step_definitions'
+let g:netrw_dirhist_5='/Volumes/Moria/work/ESP/submission/features/vcr/cassettes'
+let g:netrw_dirhist_6='/Volumes/Moria/work/ESP/provisioning'
+let g:netrw_dirhist_7='/Volumes/Moria/work/ESP/submission/log'
+let g:netrw_dirhist_8='/Volumes/Moria/work/ESP/submission/app/views/ui'
