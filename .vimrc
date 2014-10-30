@@ -147,6 +147,8 @@ nmap <C-h> :vertical resize -5<CR>
 " NERDTreeToggle
 nmap <C-t> :NERDTreeToggle<CR>
 
+" autocmd BufEnter * if &modifiable | NERDTreeFind | wincmd p | endif
+
 " preserve buffer history when switching
 set hidden
 
@@ -169,7 +171,7 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " add ,f
-map <leader>f :NERDTreeFind<cr>
+map <leader>f :NERDTreeToggle<cr>
 
 autocmd FileType ruby compiler ruby
 
@@ -200,6 +202,5 @@ set backupdir=~/.vimbackupdir,~/tmp,~/,.
 set directory=~/.vimbackupdir,~/tmp,~/,.
 
 map <Leader>, :A<CR>
-
 
 " ~/.vimrc ends here
