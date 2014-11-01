@@ -53,7 +53,7 @@ set backspace=indent,eol,start
 set autoindent
 
 " keep 200 commands and 200 search patterns in the history
-set history=200
+set history=2000
 
 " only keep 500 levels of undo
 set undolevels=500
