@@ -172,6 +172,7 @@ autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
 " add ,f
 map <leader>f :NERDTreeToggle<cr>
+map <leader>r :NERDTreeFind<cr>
 
 autocmd FileType ruby compiler ruby
 
@@ -202,5 +203,8 @@ set backupdir=~/.vimbackupdir,~/tmp,~/,.
 set directory=~/.vimbackupdir,~/tmp,~/,.
 
 map <Leader>, :A<CR>
+
+" Set git blame
+map <Leader>gb :Gblame<CR>
 
 " ~/.vimrc ends here
