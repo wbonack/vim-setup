@@ -207,4 +207,11 @@ map <Leader>, :A<CR>
 " Set git blame
 map <Leader>gb :Gblame<CR>
 
+" Set statusline to 2 for Josh's bottom bar
+set laststatus=2
+"python from powerline.vim import setup as powerline_setup
+"python powerline_setup()
+"python del powerline_setup
+
+
 " ~/.vimrc ends here
