@@ -1,6 +1,8 @@
 " We use a vim
 set nocompatible
 
+set clipboard=unnamed
+
 " Set mapleader
 let mapleader = ","
 let g:mapleader = ","
@@ -213,5 +215,9 @@ set laststatus=2
 "python powerline_setup()
 "python del powerline_setup
 
+map <Leader>w :wincmd h<CR>
+map <Leader>e :wincmd l<CR>
+
+map <Leader>b :b
 
 " ~/.vimrc ends here
