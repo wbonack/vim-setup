@@ -220,4 +220,21 @@ map <Leader>e :wincmd l<CR>
 
 map <Leader>b :b
 
+" Make an ack shortcut
+map <Leader>ck :Ack
+
+" Make the tab close shortcut
+map <Leader>tc :tabclose<CR>
+
+" Shortcut for quit
+map <Leader>q :q<CR>
+
+" Shortcut for tabonly
+map <Leader>to :tabo<CR>
+
+set noignorecase
+
+" Allow clicking in vim to select things, etc
+set mouse=a
+
 " ~/.vimrc ends here
