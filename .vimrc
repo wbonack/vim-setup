@@ -37,8 +37,6 @@ filetype plugin indent on
 " display tab characters and end-of-line whitespace
 " (unfortunately, the list option is mutually exlusive with
 " the linebreak option; it's one or the other!)
-set list
-set listchars=tab:>-,trail:-
 
 " highlight when braces and parens match
 set showmatch
