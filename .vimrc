@@ -37,8 +37,8 @@ filetype plugin indent on
 " display tab characters and end-of-line whitespace
 " (unfortunately, the list option is mutually exlusive with
 " the linebreak option; it's one or the other!)
-set list
-set listchars=tab:>-,trail:-
+"set list
+"set listchars=tab:>-,trail:-
 
 " highlight when braces and parens match
 set showmatch
@@ -160,12 +160,31 @@ au FileType html exe ":silent 1,$!xmllint --format --recover - 2>/dev/null"
 nmap <C-j> :%!python -m json.tool<CR>
 vmap <Leader>j :!python -m json.tool<CR>
 
-" Add vim syntax highlighting
+
+"======================"
+".git Vundle plugins
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+"" let Vundle manage Vundle, required
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'tpope/vim-surround'
+Plugin 'vim-ruby/vim-ruby' 
+Plugin 'slim-template/vim-slim'
+
+"======================"
+" Pathogen plugin loader
 execute pathogen#infect()
+
+" Vundle plugin loader
+call vundle#end()
+"======================"
+
 syntax enable
 filetype plugin indent on
 
-colorscheme jellybeans
+colorscheme slate
 
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
